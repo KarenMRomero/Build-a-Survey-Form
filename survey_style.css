@@ -1,0 +1,159 @@
+:root {
+
+    --bright-blue: #0b65c5b1;
+    --medium-blue: #a9f2ffb1;
+    --dark-blue: #063970c2;
+    font-size: 40px;
+
+}
+
+body {
+    display: block;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2vw;
+    font-weight: 1em;
+    text-transform: capitalize;
+    line-height: 1.4;
+    background-image: linear-gradient(to top, var(--medium-blue), var(--bright-blue)), url(https://images.unsplash.com/photo-1599044259127-dceef81b530e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+    /* background-image: linear-gradient(to bottom, var(--bright-blue), var(--medium-blue)); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+div {
+    display: block;
+    border: 1px groove var(--bright-blue);
+    border-radius: 1em;
+}
+
+/* .form-container:hover {
+    background-color: var(--bright-blue);
+} */
+
+.form-container {
+    max-width: 40vw;
+    width: 100%;
+    margin: 5% auto 0 auto;
+    color: white;
+    background-color: var(--bright-blue);
+    /* background-color: linear-gradient(to top, var(--medium-blue), var(--bright-blue)); */
+}
+
+#survey-form {
+    display: block;
+    background-color: #0639708e;
+    margin: 0 auto 1.25rem auto;
+    padding: 5%;
+    max-width: 90vw;
+    margin-bottom: 0;
+    border-radius: 1em;
+}
+
+
+.form-group {
+    box-sizing: border-box;
+    margin: 0 auto 1.2vh auto;
+    padding: 0.25rem;
+}
+
+input,
+button,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: 1.5vw;
+    line-height: inherit;
+    max-width: 90vw;
+}
+
+
+input {
+    display: block;
+    max-width: 90vw;
+    width: 90%;
+    height: 0.1em;
+    padding: 1vw 1.5vw;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.5vw;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input:hover,
+select:hover {
+    border-color: rgb(0, 229, 255);
+    border-width: 2px;
+}
+
+
+p {
+    margin-block-end: 2%;
+    margin-block-start: 2%;
+}
+
+label {
+    display: inline-block;
+    max-width: 80vw;
+
+}
+
+.input-radio,
+.input-checkbox {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.input-textarea {
+    display: block;
+    width: 90%;
+    margin: 0 auto 0 auto;
+    border-radius: 0.6em;
+}
+
+select {
+    display: block;
+    width: 50%;
+    margin: 0 auto 0 auto;
+    border-radius: 0.3em;
+    color: rgb(73, 80, 87)
+}
+
+
+
+.input-textarea:hover {
+    border-color: rgb(0, 229, 255);
+}
+
+button {
+    display: block;
+    width: 100%;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    border-radius: 1em;
+    background-color: rgb(47, 208, 208);
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    background-color: rgba(47, 208, 208, 0.661);
+}
+
+h1,
+#description {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+}
+
+
+@media (max-width:1000px) {
+    .form-container {
+        max-width: 80vw;
+    }
+}

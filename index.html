@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="survey_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:ital,wght@0,300;1,200;1,700&family=Yatra+One&display=swap"
+        rel="stylesheet">
+    <title>Swimming Lessons Survey</title>
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h1 id="title">swimming lessons survey</h1>
+        <p id="description">thank you for taking the time to fill this survey</p>
+        <form id="survey-form" action="">
+
+
+            <div class="form-group">
+                <label id="name-label" for="name">name</label>
+                <input id="name" type="text" name="name" placeholder="enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">email</label>
+                <input id="email" type="email" name="email" placeholder="enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">age</label>
+                <input id="number" type="number" name="number" placeholder="enter your age" min="10" max="80" required>
+            </div>
+
+            <div class="form-group">
+                <p>which hour do yor preffer take classes?</p>
+                <select id="dropdown" name="schedule" required>
+                    <option disabled="" selected="" value="">select an hour</option>
+                    <option value="morning">6am - 10am </option>
+                    <option value="afternoon">10am - 2pm </option>
+                    <option value="late-afternoon">2pm - 6pm </option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p> which type of pool do you want to use?</p>
+
+                <input class="input-radio" type="radio" name="pool-type" id="olimpica" value="olimpi">
+                <label for="olimpica">olympic pool</label>
+                <br>
+                <input class="input-radio" type="radio" name="pool-type" id="semiolimpica" value="semi">
+                <label for="semiolimpica">semiolympic pool</label>
+                <br>
+                <input class="input-radio" type="radio" name="pool-type" id="jumping" value="jump">
+                <label for="jumping">jumping pool</label>
+                <br>
+            </div>
+
+            <div class="form-group">
+                <p>select your level as swimmer</p>
+                <input class="input-radio" type="radio" name="level" id="low-level" value="low">
+                <label for="low-level">i have never
+                    swum</label>
+                <br>
+
+
+                <label for="medium-level"><input class="input-radio" type="radio" name="level" id="medium-level"
+                        value="medium"> i swim using some basic swimming techniques</label>
+
+                <br>
+                <input class="input-radio" type="radio" name="level" id="hight-level" value="hight">
+                <label for="hight-level">i am an expert swimmer</label>
+                <br>
+            </div>
+
+
+            <div class="form-group">
+                <p>please check the items you already have </p>
+
+
+                <input class="input-checkbox" type="checkbox" id="glasses" value="glasses" name="items">
+                <label for="glasses">glasses</label>
+                <br>
+                <input class="input-checkbox" type="checkbox" id="cap" value="cap" name="items">
+                <label for="cap">bathing cap</label>
+                <br>
+                <input class="input-checkbox" type="checkbox" id="earplugs" value="earplugs" name="items">
+                <label for="earplugs">earplugs</label>
+                <br>
+            </div>
+
+            <div class="form-group">
+                <p>let us know about your previus experiences and your expectations for the lessons:</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button id="submit">submit</button>
+            </div>
+
+
+        </form>
+
+
+    </div>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
