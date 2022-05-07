@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
 
     --bright-blue: #0b65c5b1;
@@ -7,24 +11,39 @@
 
 }
 
+html {
+    /* background-color: aqua; */
+    /* height: 1000px; */
+}
+
+
+/* body {
+    content: '';
+    position: fixed;
+} */
+
 body {
     display: block;
+    /* width: 100%;
+    height: inherit; */
     font-family: 'Patrick Hand', cursive;
     font-size: 2vw;
     font-weight: 1em;
     text-transform: capitalize;
     line-height: 1.4;
     background-image: linear-gradient(to top, var(--medium-blue), var(--bright-blue)), url(https://images.unsplash.com/photo-1599044259127-dceef81b530e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
-    /* background-image: linear-gradient(to bottom, var(--bright-blue), var(--medium-blue)); */
+    /* background-image: linear-gradient(to top, var(--medium-blue), var(--bright-blue)), url(/images/pool.jpg); */
+
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     margin: 0;
 }
 
 div {
     display: block;
-    border: 1px groove var(--bright-blue);
+
     border-radius: 1em;
 }
 
@@ -38,6 +57,7 @@ div {
     margin: 5% auto 0 auto;
     color: white;
     background-color: var(--bright-blue);
+
     /* background-color: linear-gradient(to top, var(--medium-blue), var(--bright-blue)); */
 }
 
@@ -56,6 +76,7 @@ div {
     box-sizing: border-box;
     margin: 0 auto 1.2vh auto;
     padding: 0.25rem;
+    border: 1px groove var(--bright-blue);
 }
 
 input,
@@ -154,6 +175,10 @@ h1,
 
 @media (max-width:1000px) {
     .form-container {
-        max-width: 80vw;
+        max-width: 100vw;
+    }
+
+    body {
+        /* font-size: 10vw; */
     }
 }
