@@ -11,17 +11,6 @@
 
 }
 
-html {
-    /* background-color: aqua; */
-    /* height: 1000px; */
-}
-
-
-/* body {
-    content: '';
-    position: fixed;
-} */
-
 body {
     display: block;
     /* width: 100%;
@@ -46,10 +35,6 @@ div {
 
     border-radius: 1em;
 }
-
-/* .form-container:hover {
-    background-color: var(--bright-blue);
-} */
 
 .form-container {
     max-width: 40vw;
@@ -111,8 +96,14 @@ select:hover {
     border-width: 2px;
 }
 
+fieldset {
+    border-color: transparent;
+    padding: 0;
+}
 
-p {
+
+p,
+legend {
     margin-block-end: 2%;
     margin-block-start: 2%;
 }
